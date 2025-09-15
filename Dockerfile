@@ -38,6 +38,6 @@ EXPOSE 8000
 
 ENTRYPOINT ["/entrypoint.sh"]
 # Comando por defecto para ejecutar el contenedor
-CMD ["gunicorn", "core.asgi:application", "-k", "uvicorn.workers.UvicornWorker", "--workers", "4", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "myproject.asgi:application", "-k", "uvicorn.workers.UvicornWorker", "--workers", "4", "--bind", "0.0.0.0:8000"]
 # Run the application with Gunicorn, a WSGI HTTP server for Python
 # CMD ["gunicorn", "--bind", "0.0.0.0:8000", "core.wsgi:application"]
