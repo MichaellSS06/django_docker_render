@@ -1,0 +1,4 @@
+###Obtener registros filtrados por st
+GET http://127.0.0.1:8000/api/registros/filtrar/?st=STN&fecha_inicio=2025-09-10&fecha_fin=2025-09-10   
+###Borrar todos los registros
+DELETE http://127.0.0.1:8000/api/registros/eliminar/
