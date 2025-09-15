@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # TODO update this row to your proper connection string
-        default='postgresql://postgres.unzketjmbngsbshlfaac:SAP_MICHAELL_PROJECT@aws-1-us-east-2.pooler.supabase.com:5432/postgres',
+        default=os.environ.get("DATABASE_URL", "unsafe-db"),
         conn_max_age=600
     )
 }
