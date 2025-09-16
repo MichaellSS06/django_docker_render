@@ -84,8 +84,9 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # TODO update this row to your proper connection string
-        default=os.environ.get("DATABASE_URL", "unsafe-db"),
-        conn_max_age=600
+        default=os.environ.get("DATABASE_URL"),
+        conn_max_age=60,
+        ssl_require=True,
     )
 }
 
