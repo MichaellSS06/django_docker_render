@@ -4,6 +4,6 @@ GET http://127.0.0.1:8000/api/registros/filtrar/?st=STN&fecha_inicio=2025-09-10&
 DELETE http://127.0.0.1:8000/api/registros/eliminar/
 
 ###Render
-GET https://django-docker-render.onrender.com/api/registros/filtrar/?st=STN&fecha_inicio=2025-09-10&fecha_fin=2025-09-10   
+GET https://mutual-kira-michaell-org-672981c8.koyeb.app/api/registros/filtrar/?st=STN&fecha_inicio=2025-09-10&fecha_fin=2025-09-10   
 ###Render
 DELETE https://mutual-kira-michaell-org-672981c8.koyeb.app/api/registros/eliminar/
